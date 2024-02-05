@@ -1,0 +1,27 @@
+.text {
+  font-family: var(--font-family-lato);
+  font-weight: 400;
+  color: #272766;
+  overflow: auto;
+}
+
+.text_size_l {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.text_size_m {
+  font-size: 20px;
+}
+
+.text_size_s {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.text_type_tag {
+  display: inline-block;
+  background-color: #d9d9f1;
+  padding: 8px 16px;
+  border-radius: 20px;
+}

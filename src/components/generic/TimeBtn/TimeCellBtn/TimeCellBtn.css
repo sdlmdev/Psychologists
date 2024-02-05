@@ -1,0 +1,32 @@
+.time-cell {
+  border: unset;
+  display: flex;
+  width: 88px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #d9d9f1;
+  cursor: pointer;
+  font-family: var(--font-family-lato);
+  font-size: 18px;
+  line-height: 24px;
+  transition: .3s ease-in-out;
+}
+
+.time-cell:hover:not(.time-cell_active) {
+  opacity: .7;
+}
+
+.time-cell_active, .time-cell:active {
+  background-color: #6b6bc7;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .time-cell {
+    padding: 6px 0px;
+    width: 70px;
+    font-size: 16px;
+  }
+}

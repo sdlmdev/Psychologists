@@ -1,0 +1,19 @@
+.data-list__price,
+.data-list__experience {
+  width: 305px;
+}
+
+.data-list__textarea {
+  min-height: 108px;
+}
+
+.data-list__four-step_themes {
+  width: 93%;
+}
+
+@media screen and (max-width: 1330px) {
+  .data-list__price,
+  .data-list__experience {
+    width: 100%;
+  }
+}

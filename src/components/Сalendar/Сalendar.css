@@ -1,0 +1,181 @@
+.calendar {
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 1px #8d8de9;
+  display: inline-flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 588px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.calendar__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.calendar__period {
+  max-width: 524px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.calendar__dates,
+.calendar__days-of-week {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  gap: 8px;
+}
+
+.calendar__dates {
+  grid-template-rows: repeat(2, 60px);
+}
+
+.calendar__days-of-week {
+  grid-template-rows: repeat(1, 60px);
+  list-style-type: none;
+}
+
+.calendar__date {
+  all: unset;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.calendar__date:hover {
+  box-shadow: inset 0 0 0 2px #8d8de9;
+  font-weight: 700;
+}
+
+.calendar__date:focus{
+  outline: 2px solid #8d8de9;
+}
+
+.calendar__cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family-lato);
+  color: #272766;
+  width: 100%;
+  height: 100%;
+}
+
+.calendar__date_type_today {
+  border: 1px solid #8d8de9;
+}
+
+.calendar__period-switch {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border: unset;
+  background-color: unset;
+}
+
+.calendar__cell_type_day-off {
+  color: #8d8de9;
+}
+
+.calendar__period-switch_type_prev {
+  background-image: url('../../images/calendar_prev_weeks.svg');
+}
+
+.calendar__period-switch_disabled,
+.calendar__date_disabled {
+  opacity: .3;
+  cursor: unset;
+}
+
+.calendar__period-switch_type_next {
+  background-image: url('../../images/calendar_next_weeks.svg');
+}
+
+.calendar__date_type_selected {
+  background: #6b6bc7;
+  color: #fff;
+}
+
+.calendar__period-reset {
+  background-image: url('../../images/reset.svg');
+  background-size: 20px;
+  background-position: center;
+}
+
+.calendar__current-weeks {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  font-family: var(--font-family-lato);
+  color: #272766;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.calendar__cell_type_day-of-week {
+  font-size: 14px;
+  line-height: normal;
+}
+
+.calendar__date_disabled:hover {
+  box-shadow: unset;
+  font-weight: unset;
+}
+
+.calendar__dates-cell {
+  all: unset;
+}
+
+@media screen and (max-width: 870px) {
+  .calendar {
+    padding: 24px;
+  }
+
+  .calendar__dates, .calendar__days-of-week {
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(7, 50px);
+  }
+
+  .calendar__days-of-week {
+    grid-template-rows: repeat(1, 50px);
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .calendar__dates, .calendar__days-of-week {
+    grid-template-rows: repeat(2, 40px);
+    grid-template-columns: repeat(7, 40px);
+  }
+
+  .calendar__days-of-week {
+    grid-template-rows: repeat(1, 40px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .calendar {
+    padding: 20px;
+  }
+
+  .calendar__dates, .calendar__days-of-week {
+    grid-template-rows: repeat(2, 30px);
+    grid-template-columns: repeat(7, 30px);
+  }
+
+  .calendar__days-of-week {
+    grid-template-rows: repeat(1, 30px);
+  }
+
+  .calendar__current-weeks {
+    font-size: 14px;
+  }
+}

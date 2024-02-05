@@ -1,0 +1,54 @@
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+.auth__form-registration {
+  max-width: 630px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: fadeOut 1s;
+}
+
+.auth__service-documents_type_text {
+  font-family: var(--font-family-lato);
+}
+
+.auth__service-documents {
+  padding-bottom: 40px;
+}
+
+.auth__form-registration-list {
+  display: grid;
+  grid-template-columns: minmax(min-content, 305px) minmax(min-content, 305px);
+  column-gap: 20px;
+  margin-bottom: 40px;
+  list-style-type: none;
+}
+
+.auth__form-registration-button {
+  align-self: end;
+}
+
+.auth__registration-psycho {
+  margin: 20px 0 28px 0;
+  animation: fadeOut 1s;
+  display: flex;
+  align-items: center;
+}
+
+.registration__prompt {
+  min-height: 51px;
+}
+
+@media screen and (max-width: 768px) {
+  .auth__form-registration-list {
+    display: flex;
+    flex-direction: column;
+  }
+}

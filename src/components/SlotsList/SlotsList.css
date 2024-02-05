@@ -1,0 +1,64 @@
+.slot-list {
+  max-width: 455px;
+  width: 100%;
+  height: 97vh;
+  max-height: 718px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #d9d9f1;
+  padding: 24px 10px 24px;
+  position: relative;
+  align-items: center;
+}
+
+.slot-list__empty {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  gap: 40px;
+}
+
+.slot-list__description {
+  font-family: var(--font-family-lato);
+  font-size: 20px;
+  color: #272766;
+  padding: 0 38px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.slot-list__slots {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 0 10px 0 14px;
+  align-self: stretch;
+  scrollbar-gutter: stable;
+}
+
+.slot-list__title {
+  font-family: var(--font-family-montserrat);
+  font-weight: 500;
+  font-size: 22px;
+  color: #272766;
+  line-height: 30px;
+}
+
+.slot-list__slots::-webkit-scrollbar {
+  background-color: #fefefe;
+}
+
+.slot-list__button {
+  text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+  .slot-list {
+    height: unset;
+  }
+}

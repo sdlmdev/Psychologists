@@ -1,0 +1,11 @@
+.policy-btn {
+  all: unset;
+  color: #6b6bc7;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.policy-btn:hover {
+  color: #272766;
+}

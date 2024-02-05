@@ -1,0 +1,17 @@
+.policy-container {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.policy-container_type_text {
+  font-family: var(--font-family-montserrat);
+}
+
+@media screen and (max-width: 768px) {
+  .policy-container {
+    flex-direction: column;
+    align-items: start;
+  }
+}

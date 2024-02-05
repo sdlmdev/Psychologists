@@ -1,0 +1,160 @@
+.background-container {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 688px;
+  z-index: -100;
+  width: 100%;
+}
+
+.background {
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  /* filter: blur При фиксированых позициях будет вызывать лаги на анимации поверх блюра (у других элементов) */
+  /* Конкретно на мобильных устройствах */
+  filter: blur(100px);
+}
+
+.circle_size_m {
+  width: 59%;
+  padding-bottom: 59%;
+  background-color: #d9d9f1;
+  top: -20%;
+  left: -10%;
+}
+
+.circle_size_s {
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #d4eee4;
+  top: 20%;
+  right: 5%;
+}
+
+.circle_size_xs {
+  width: 30%;
+  padding-bottom: 30%;
+  background-color: #f7f5ef;
+  top: -60%;
+  right: 5%;
+}
+
+.circle_size_l {
+  width: 68%;
+  padding-bottom: 68%;
+  background-color: #f7f5ef;
+  bottom: 25%;
+  right: -10%;
+}
+
+/* Анимация фона */
+.circle_l_animated {
+  animation: trans-right-down 30s ease-in-out infinite;
+}
+
+.circle_m_animated {
+  animation: trans-left-down 20s ease-in-out infinite;
+}
+
+.circle_s_animated {
+  animation: trans-right-up 20s ease-in-out infinite;
+}
+
+.circle_xs_animated {
+  animation: trans-left-up 10s ease-in-out infinite;
+}
+
+@keyframes trans-left-down {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(90%, 30%);
+  }
+
+  50% {
+    transform: translate(20%, 60%);
+  }
+
+  75% {
+    transform: translate(100%, -10%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes trans-right-down {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-90%, 60%);
+  }
+
+  50% {
+    transform: translate(0%, 20%);
+  }
+
+  75% {
+    transform: translate(-100%, 30%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes trans-right-up {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -40%);
+  }
+
+  50% {
+    transform: translate(10%, -30%);
+  }
+
+  75% {
+    transform: translate(-80%, -60%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes trans-left-up {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0, 150%);
+  }
+
+  50% {
+    transform: translate(-140%, 100%);
+  }
+
+  75% {
+    transform: translate(100%, 160%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

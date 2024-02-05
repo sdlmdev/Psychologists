@@ -1,0 +1,43 @@
+.psychologist-account {
+  display: flex;
+  row-gap: 40px;
+  column-gap: 20px;
+  align-items: start;
+}
+
+.psychologist-account__content {
+  align-items: center;
+}
+
+.psychologist-account__layout {
+  padding-bottom: 180px !important;
+}
+
+.psychologist-account__content-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 41px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  .psychologist-account {
+    flex-direction: column;
+  }
+
+  .psychologist-account__content-block {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .psychologist-account__layout {
+    align-items: center;
+    padding-bottom: 100px !important;
+  }
+
+  .psychologist-account {
+    align-items: center;
+    max-width: min-content;
+  }
+}

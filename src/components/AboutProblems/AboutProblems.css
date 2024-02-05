@@ -1,0 +1,115 @@
+.about-problems {
+  padding: 120px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-problems__container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.about-problems__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.about-problems__card {
+  border: 1px solid;
+  border-color: #8d8de9;
+  border-radius: 12px;
+  padding: 32px 32px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.about-problems__description {
+  font-family: var(--font-family-lato);
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 20px;
+  color: #272766;
+}
+
+.about-problems__img {
+  object-fit: contain;
+  align-self: flex-end;
+  height: 120px;
+  width: 120px;
+}
+
+.about-problems__card:nth-child(1) {
+  max-width: 630px;
+}
+
+.about-problems__card:nth-child(1) .about-problems__description {
+  max-width: 368px;
+}
+
+.about-problems__card:nth-child(2),
+.about-problems__card:nth-child(3) {
+  max-width: 305px;
+}
+
+.about-problems__card:nth-child(4),
+.about-problems__card:nth-child(5),
+.about-problems__card:nth-child(6) {
+  max-width: 413px;
+}
+
+@media screen and (max-width: 1439px) {
+  .about-problems__card:nth-child(1),
+  .about-problems__card:nth-child(2),
+  .about-problems__card:nth-child(3),
+  .about-problems__card:nth-child(4),
+  .about-problems__card:nth-child(5),
+  .about-problems__card:nth-child(6) {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .about-problems__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-problems {
+    padding: 120px 80px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about-problems__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-problems {
+    padding: 80px 24px;
+  }
+
+  .about-problems__container {
+    row-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .about-problems__list {
+    display: flex;
+    flex-direction: column;
+  }
+}

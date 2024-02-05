@@ -1,0 +1,27 @@
+.dropdown-item-container {
+  position: relative;
+  min-height: 32px;
+  font-family: var(--font-family-lato);
+  font-weight: 400;
+  color: #272766;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  border: none;
+}
+
+.dropdown-item-container_type_radio {
+  gap: 8px;
+}
+
+.dropdown-item-container_type_checkbox {
+  gap: 12px;
+}
+
+.dropdown-item-container_type_titles {
+  width: max-content;
+}

@@ -1,0 +1,36 @@
+.psychologists__welcome-image {
+  display: block;
+  object-fit: contain;
+  max-width: 522px;
+  max-height: 434px;
+  width: 49%;
+}
+
+@media screen and (max-width: 950px) {
+  .psychologists__banner {
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: unset;
+  }
+  
+  .psychologists__banner-text {
+    max-width: unset;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .psychologists__welcome-image {
+    width: 327px;
+    height: 301px;
+  }
+
+  .psychologists__welcome {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .psychologists__welcome-image {
+    width: 100%;
+  }
+}

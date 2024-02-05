@@ -1,0 +1,12 @@
+.data-list__documents {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 48px;
+}
+
+.data-list__documents-text {
+  font-family: var(--font-family-lato);
+  font-size: 18px;
+  line-height: 24px;
+}

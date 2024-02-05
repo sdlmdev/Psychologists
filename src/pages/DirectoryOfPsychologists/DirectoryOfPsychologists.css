@@ -1,0 +1,166 @@
+.directory-psychologists {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 0;
+  margin-bottom: 40px;
+  width: 100%;
+  align-items: center;
+}
+
+.directory-psychologists__preloader {
+  position: relative !important;
+}
+
+.directory-psychologists__template {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.directory-psychologists__title {
+  margin-bottom: 60px;
+}
+
+.directory-psychologists__container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.directory-psychologists__psycho-list {
+  max-width: 835px;
+  width: 100%;
+}
+
+.directory-psychologists__psycho-list-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  padding-bottom: 40px;
+}
+
+.directory-psychologists__psycho-list-item {
+  border-radius: 12px;
+  transition: box-shadow .2s ease;
+  cursor: pointer;
+}
+
+.directory-psychologists__psycho-list-item:hover {
+  box-shadow: 0 0 5px #8d8de9;
+}
+
+.psychologists-popup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, .8);
+  opacity: 0;
+  visibility: hidden;
+  padding: 50px 0 0;
+  height: 100vh;
+  transition: .6s ease-in-out;
+}
+
+.psychologists-popup_open {
+  visibility: visible;
+  opacity: 1;
+  transition: .6s ease-in-out;
+}
+
+.psychologists-popup__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1030px;
+  width: 100%;
+  gap: 29px;
+}
+
+.psychologists-popup__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  overflow-y: auto;
+  margin-bottom: 30px;
+}
+
+.psychologists-popup__btn {
+  margin-top: 5px;
+  align-self: flex-start;
+  color: #272766;
+}
+
+.directory-psychologists__psycho-list_error {
+  text-align: center;
+}
+
+.directory-animation-enter {
+  opacity: 0;
+}
+
+.directory-animation-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.directory-animation-exit {
+  opacity: 1;
+}
+
+.directory-animation-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+@media screen and (max-width: 1440px) {
+  .directory-psychologists {
+    padding: 80px 80px 0;
+  }
+
+  .psychologists-popup__container {
+    padding-right: 121px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .directory-psychologists__container {
+    flex-wrap: wrap;
+  }
+
+  .directory-psychologists__psycho-list {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .directory-psychologists__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .directory-psychologists {
+    padding: 40px 24px 0;
+  }
+
+  .psychologists-popup__container {
+    flex-direction: column;
+    justify-content: unset;
+    padding: 0 24px 0;
+    row-gap: 10px;
+  }
+
+  .psychologists-popup {
+    padding: 0;
+  }
+  
+  .psychologists-popup__btn {
+    width: unset;
+  }
+}

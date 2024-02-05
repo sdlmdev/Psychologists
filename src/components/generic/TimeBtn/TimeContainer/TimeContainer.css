@@ -1,0 +1,19 @@
+.time-container {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  list-style-type: none;
+  padding-bottom: 12px;
+}
+
+.time-container__not-found {
+  color: #272766;
+  font-family: var(--font-family-lato);
+  font-size: 18px;
+  line-height: 24px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}

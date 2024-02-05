@@ -1,0 +1,21 @@
+.field-button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.field-button_type_dropdown {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.field-button:focus {
+  outline: 2px solid #8d8de9;
+  border-radius: 12px;
+}

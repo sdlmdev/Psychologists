@@ -1,0 +1,95 @@
+.user-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 100%;
+}
+.user-data__form {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  row-gap: 24px;
+  border-radius: 12px;
+  border: 1px solid #6b6bc7;
+  max-width: 955px;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.data-list {
+  list-style-type: none;
+  width: 100%;
+}
+
+.education-btn {
+  min-width: min-content;
+  max-width: 385px;
+  text-align: start;
+  margin-top: 20px;
+}
+
+.data-list__prompt {
+  min-height: 34px;
+}
+
+.data-list__text {
+  min-height: 48px;
+}
+
+.data-list_type_column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.data-list_type_grid {
+  display: grid;
+  grid-template-columns: minmax(min-content, 305px) minmax(min-content, 305px);
+  column-gap: 20px;
+}
+
+.data-list__graduation-year {
+  max-width: 325px;
+  width: 100%;
+}
+
+.data-list-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  width: 100%;
+}
+
+.data-list-container ul:not(:first-child) {
+  padding-top: 40px;
+  border-top: 1px solid #6b6bc7;
+}
+
+.user-data__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+
+@media screen and (max-width: 1330px) {
+  .data-list_type_grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .data-list__text {
+    min-height: 70px;
+  }
+
+  .user-data__btn {
+    max-width: 50%;
+  }
+
+  .user-data__form {
+    padding: 24px;
+  }
+}

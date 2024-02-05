@@ -1,0 +1,45 @@
+.auth__form-login-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 28px;
+  align-content: center;
+  align-items: center;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+.auth__form-login {
+  max-width: 522px;
+  width: 100%;
+  padding: 40px 0 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  animation: fadeOut 1s;
+}
+
+.auth__form-login-fields {
+  list-style-type: none;
+}
+
+.auth__prompt {
+  min-height: 34px;
+}
+
+.login__prompt {
+  min-height: 34px;
+}
+
+@media screen and (max-width: 450px) {
+  .login__prompt {
+    min-height: 51px;
+  }
+}

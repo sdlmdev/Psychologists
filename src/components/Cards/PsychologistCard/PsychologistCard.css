@@ -1,0 +1,113 @@
+.psycho-card {
+  padding: 32px;
+  border: 1px solid #8d8de9;
+  border-radius: 12px;
+  width: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.psycho-card__header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 28px;
+  align-items: center;
+}
+
+.next-sessions__title {
+  color: #272766;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.next-sessions > .text {
+  margin-bottom: 12px;
+}
+
+.psycho-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 20px;
+}
+
+.psycho-card__content_type_full {
+  margin-top: 32px;
+  gap: 32px;
+  min-height: min-content;
+  padding: 0 10px 0 0;
+}
+
+.psycho-card__btn {
+  padding-left: 0;
+}
+
+.psycho-card__list {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.psycho-card__time-container {
+  max-width: 600px;
+}
+
+.next-sessions > .psycho-card__list {
+  margin-bottom: 12px;
+}
+
+.psycho-card__education {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #8d8de9;
+}
+
+.next-session__slot {
+  padding: 10px 20px;
+  background-color: #d9d9f1;
+  border-radius: 12px;
+}
+
+.psycho-card__list_type_education {
+  flex-direction: column;
+  width: 100%;
+}
+
+.next-sessions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 1024px) {
+  .psycho-card {
+    max-height: 67vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .psycho-card__header {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .psycho-card__header {
+    column-gap: 15px;
+  }
+}
