@@ -31,7 +31,8 @@
     "prepare": "husky install",
     "format": "prettier . --write --ignore-path ./.prettierignore",
     "commit": "cz",
-    "chromatic": "npx chromatic --project-token=chpt_7402a8cfaee8c02"
+    "chromatic": "npx chromatic --project-token=chpt_7402a8cfaee8c02",
+    "storybook": "storybook dev -p 6006"
   },
   "browserslist": {
     "production": [
@@ -47,14 +48,14 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@storybook/addon-essentials": "^7.4.0",
-    "@storybook/addon-interactions": "^7.4.0",
-    "@storybook/addon-links": "^7.4.0",
-    "@storybook/addon-onboarding": "^1.0.8",
-    "@storybook/blocks": "^7.4.0",
-    "@storybook/preset-create-react-app": "^7.4.0",
-    "@storybook/react": "^7.4.0",
-    "@storybook/react-webpack5": "^7.4.0",
+    "@storybook/addon-essentials": "^8.1.4",
+    "@storybook/addon-interactions": "^8.1.4",
+    "@storybook/addon-links": "^8.1.4",
+    "@storybook/addon-onboarding": "^8.1.4",
+    "@storybook/blocks": "^7.0.0",
+    "@storybook/preset-create-react-app": "^8.1.4",
+    "@storybook/react": "^8.1.4",
+    "@storybook/react-webpack5": "^8.1.4",
     "@storybook/testing-library": "^0.2.0",
     "babel-plugin-named-exports-order": "^0.0.2",
     "chromatic": "^7.0.0",
@@ -67,10 +68,11 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
-    "storybook": "^7.4.0",
+    "storybook": "^8.1.4",
     "storybook-react-context": "^0.6.0",
     "webpack": "^5.88.2"
   },
